@@ -44,7 +44,6 @@ fetchDetailsPage();
 function createDetailsPage(details) {
     console.dir(details);
     
-    
     const h1 = document.querySelector("h1");
     h1.innerHTML = details.name;
 
@@ -56,7 +55,7 @@ function createDetailsPage(details) {
     storefrontDescription.innerHTML = detailsDescription;
 
     const detailsBackgroundImage = document.querySelector(".details-image");
-    detailsBackgroundImage.innerHTML = details.image_background;
+    detailsBackgroundImage.src = details.image_background;
     console.log(details.image_background);
 
     document.title = details.name;
